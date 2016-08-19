@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .red{
+        background: red
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="red"></li>
+      <li class="red"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+<!--  -->
+<script type="text/javascript">
+  function getByClass(className){
+
+  var all = document.getElementsByTagName('*')
+
+  var arr = [];
+
+  for(var i = 0;i<all.length;i++){
+    if (all[i].className == className){
+      arr.push(all[i]);
+      console.log(all);
+    }
+  }
+  return arr;
+  }
+  var aLi = getByClass('red')
+
+</script>
+  </body>
+</html>
